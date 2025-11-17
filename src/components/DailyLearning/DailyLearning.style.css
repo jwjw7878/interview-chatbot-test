@@ -1,0 +1,30 @@
+.daily-container {
+  width: 50%;
+}
+.daily-container h2 {
+  text-align: center;
+}
+.daily-container .daily-box {
+  width: 90%;
+  height: 450px;
+  border: 2px solid blue;
+  margin: auto;
+  overflow-y: scroll;
+}
+.daily-container .answer-length {
+  width: 70%;
+  margin: 40px auto;
+  height: 40px;
+  border: 1px solid black;
+}
+.answer-length .answer-graph {
+  background-color: blue;
+}
+.daily-box ul {
+  list-style: none;
+}
+.daily-box li {
+  background-color: blanchedalmond;
+  margin: 10px 0;
+  padding: 10px;
+}

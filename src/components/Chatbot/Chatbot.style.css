@@ -1,0 +1,49 @@
+.chatbot-container {
+  width: 50%;
+}
+.chatbot-container h2 {
+  margin: 30px auto;
+  text-align: center;
+}
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 400px;
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 12px;
+  overflow-y: scroll;
+}
+.chat-box .chat {
+  width: 50%;
+  border-radius: 12px;
+  padding: 10px;
+}
+.chat.ai {
+  align-self: flex-start;
+  background-color: aliceblue;
+}
+.chat.user {
+  align-self: flex-end;
+  background-color: beige;
+}
+h4 {
+  margin: 20px 0;
+}
+.el {
+  cursor: pointer;
+  padding: 6px;
+  margin: 0 6px;
+  border: 1px solid black;
+}
+.el.active {
+  border: 2px solid blue;
+}
+.question-area {
+  margin: 50px 0;
+}
+.question-area textarea {
+  width: 80%;
+  height: 50px;
+}
