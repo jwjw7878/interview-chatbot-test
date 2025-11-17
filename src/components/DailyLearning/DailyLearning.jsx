@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./DailyLearning.style.css";
 
 const DailyLearning = ({ chat }) => {
@@ -7,7 +7,11 @@ const DailyLearning = ({ chat }) => {
     .filter(
       (el) => el.content.includes("문제") && !el.content.includes("정답")
     );
-
+  useEffect(() => {
+    if (filteredQuestions.length >= 10) {
+      alert("일일 할당량 달성");
+    }
+  }, [chat]);
   const aiQuestionArr = filteredQuestions.length >= 10 ? [] : filteredQuestions;
   return (
     <div className="daily-container">
